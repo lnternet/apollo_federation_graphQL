@@ -9,15 +9,15 @@ const gateway = new ApolloGateway({
     ]
   });
 
+async function startup() {
+  const { schema, executor } = await gateway.load();
 
-(async () => {
-    const { schema, executor } = await gateway.load();
+  const server = new ApolloServer({ schema, executor });
 
-    const server = new ApolloServer({ schema, executor });
-
-    server.listen().then(({ url }) => {
-        console.log(`Server ready at ${url}`);
-    });
+  server.listen().then(({ url }) => {
+      console.log(`Gateway ready at ${url}`);
+  });
 }
-)();
-  
+
+// * When starting all projects in parallel with one CLI command delay the startup of gateway a bit:
+setTimeout(startup, 10000);

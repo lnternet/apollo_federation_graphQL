@@ -1,0 +1,1 @@
+start: cd gateway/ && npm run start-all
