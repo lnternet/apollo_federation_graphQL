@@ -1,0 +1,14 @@
+{
+  "name": "apollo_federation_demo",
+  "main": "index.js",
+  "scripts": {
+    "start-gateway": "node index.js",
+    "start-user-api": "node ../userAPI/index.js",
+    "start-book-api": "node ../bookAPI/index.js"
+  },
+  "dependencies": {
+    "@apollo/gateway": "^0.10.7",
+    "apollo-server": "^2.9.6",
+    "graphql": "^14.5.8"
+  }
+}

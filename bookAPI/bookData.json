@@ -1,0 +1,34 @@
+{
+    "books": [
+        {
+            "id": 0,
+            "title": "Hitchhiker's Guide to the Galaxy",
+            "author": "Douglas Adams",
+            "belongsTo": 0
+        },
+        {
+            "id": 1,
+            "title": "The Bible",
+            "author": "-",
+            "belongsTo": 0
+        },
+        {
+            "id": 2,
+            "title": "Harry Potter and the Order of Phoenix",
+            "author": "J. K. Rowling",
+            "belongsTo": 1
+        },
+        {
+            "id": 3,
+            "title": "Green Mile",
+            "author": "Stephen King",
+            "belongsTo": null
+        },
+        {
+            "id": 4,
+            "title": "459 Fahrenheit",
+            "author": "Ray Bradbury",
+            "belongsTo": 1
+        }
+    ]
+}
