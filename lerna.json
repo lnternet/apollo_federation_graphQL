@@ -1,0 +1,4 @@
+{
+    "packages": ["bookAPI/", "userAPI/"],
+    "version": "independent"
+}
