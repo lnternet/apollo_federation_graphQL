@@ -14,7 +14,7 @@ async function startup() {
 
   const server = new ApolloServer({ schema, executor });
 
-  server.listen().then(({ url }) => {
+  server.listen({ port: process.env.PORT || 4000 }).then(({ url }) => {
       console.log(`Gateway ready at ${url}`);
   });
 }
